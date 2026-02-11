@@ -16,11 +16,11 @@
   ],
   "web_accessible_resources": [
     {
-"resources": [
-  "fredbear.gif",
-  "audio.mp3",
-  "static.gif"
-]
+      "resources": [
+        "fredbear.gif",
+        "audio.mp3",
+        "static.gif"
+      ],
       "matches": ["<all_urls>"]
     }
   ]
