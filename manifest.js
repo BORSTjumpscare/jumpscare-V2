@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "holy ai version van jumpscare",
+  "version": "1.0",
+  "description": "Random Freddy jumpscares with secret combo!",
+  "permissions": ["tabs", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["main.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/fredbear.gif",
+        "assets/audio.mp3",
+        "assets/static.gif"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
